@@ -1,0 +1,15 @@
+You have specified some options that require raw socket access.
+These options will not be honored without the necessary privileges.
+# Nmap 7.99 scan initiated Sat Jul 11 19:51:19 2026 as: nmap -D RND:10 -sV -sC -T4 -oN nmap_reports/report_2026-07-11_19-51-18.txt localhost
+Nmap scan report for localhost (127.0.0.1)
+Host is up (0.0043s latency).
+Other addresses for localhost (not scanned): ::1
+Not shown: 998 closed tcp ports (conn-refused)
+PORT     STATE SERVICE VERSION
+53/tcp   open  domain  dnsmasq 2.51
+| dns-nsid: 
+|_  bind.version: dnsmasq-2.51
+8022/tcp open  ssh     OpenSSH 10.4 (protocol 2.0)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sat Jul 11 19:51:36 2026 -- 1 IP address (1 host up) scanned in 17.95 seconds

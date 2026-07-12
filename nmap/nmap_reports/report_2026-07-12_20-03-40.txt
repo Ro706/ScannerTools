@@ -1,0 +1,30 @@
+You have specified some options that require raw socket access.
+These options will not be honored without the necessary privileges.
+# Nmap 7.99 scan initiated Sun Jul 12 20:03:40 2026 as: nmap -D RND:10 -sV -sC -T4 -oN nmap_reports/report_2026-07-12_20-03-40.txt www.vulnhub.com
+Nmap scan report for www.vulnhub.com (104.21.42.126)
+Host is up (0.34s latency).
+Other addresses for www.vulnhub.com (not scanned): 2606:4700:3030::ac43:a208 2606:4700:3032::6815:2a7e 172.67.162.8
+Not shown: 996 filtered tcp ports (no-response)
+PORT     STATE SERVICE  VERSION
+80/tcp   open  http     Cloudflare http proxy
+|_http-title: Did not follow redirect to https://www.vulnhub.com/
+|_http-server-header: cloudflare
+443/tcp  open  ssl/http Cloudflare http proxy
+|_http-title: Vulnerable By Design ~ VulnHub
+|_http-server-header: cloudflare
+| ssl-cert: Subject: commonName=vulnhub.com
+| Subject Alternative Name: DNS:vulnhub.com, DNS:*.vulnhub.com
+| Not valid before: 2026-05-22T06:01:23
+|_Not valid after:  2026-08-20T07:00:57
+8080/tcp open  http     Cloudflare http proxy
+|_http-server-header: cloudflare
+8443/tcp open  ssl/http Cloudflare http proxy
+|_http-title: 400 The plain HTTP request was sent to HTTPS port
+|_http-server-header: cloudflare
+| ssl-cert: Subject: commonName=vulnhub.com
+| Subject Alternative Name: DNS:vulnhub.com, DNS:*.vulnhub.com
+| Not valid before: 2026-05-22T06:01:23
+|_Not valid after:  2026-08-20T07:00:57
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul 12 20:05:38 2026 -- 1 IP address (1 host up) scanned in 117.92 seconds

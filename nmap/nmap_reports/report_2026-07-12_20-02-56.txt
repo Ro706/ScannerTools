@@ -1,0 +1,6 @@
+You have specified some options that require raw socket access.
+These options will not be honored without the necessary privileges.
+# Nmap 7.99 scan initiated Sun Jul 12 20:02:56 2026 as: nmap -D RND:10 -sV -sC -T4 -oN nmap_reports/report_2026-07-12_20-02-56.txt https://www.vulnhub.com/
+Unable to split netmask from target expression: "https://www.vulnhub.com/"
+WARNING: No targets were specified, so 0 hosts scanned.
+# Nmap done at Sun Jul 12 20:02:56 2026 -- 0 IP addresses (0 hosts up) scanned in 0.30 seconds

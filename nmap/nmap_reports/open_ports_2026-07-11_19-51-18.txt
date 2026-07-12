@@ -1,0 +1,2 @@
+53/tcp   open  domain  dnsmasq 2.51
+8022/tcp open  ssh     OpenSSH 10.4 (protocol 2.0)
